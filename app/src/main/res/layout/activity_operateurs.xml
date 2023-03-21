@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Operateurs">
+
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal|right"
+        app:srcCompat="@drawable/avataricon" />
+    <!--    android:layout_gravity="center_vertical|right"-->
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <!--    android:layout_gravity="center_horizontal|right"-->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <TextView
+        android:id="@+id/txtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="Saisir votre numéro de téléphone"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/edtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Numéro de téléphone"
+        android:inputType="phone"
+        android:maxLength="8" />
+
+    <TextView
+        android:id="@+id/txtLigne"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Votre ligne est ..."
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/txtCode"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Entrez votre code de recharge"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtCode"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Code de recharge"
+        android:inputType="number" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/txtRecharge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Rechargez votre ligne"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtRecharge"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Recharge"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnRecharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:backgroundTint="@color/white"
+            android:shadowColor="#FFFFFF"
+            android:text="Appeler"
+            android:textColor="@color/black"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/txtSolde"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Pour consulter le solde de votre ligne"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtSolde"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Solde"
+            android:inputType="none"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSolde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:backgroundTint="@color/white"
+            android:text="Appeler"
+            android:textColor="@color/black"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+</LinearLayout>
